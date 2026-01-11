@@ -1,8 +1,15 @@
 # study_python
 just for my study
 
+## SubProjects
 
-# ERROR が出た時にどうやって解決したか
+[Python ではじめるオープンデータ解析](open-data/README.md)
+
+# 古いもの
+
+以下は古いものの墓場を作った
+
+## ERROR が出た時にどうやって解決したか
 
 ```
 $ python3.12 -m pip install --upgrade pip
