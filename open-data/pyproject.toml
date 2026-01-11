@@ -1,0 +1,8 @@
+[project]
+name = "open-data"
+version = "0.1.0"
+requires-python = ">= 3.13"
+description = "このプロジェクトでは、Python ではじめるオープンデータ解析の内容を学習するのに使う"
+dependencies = [
+    "pandas>=2.3.3",
+]
