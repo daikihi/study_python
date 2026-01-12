@@ -4,5 +4,7 @@ version = "0.1.0"
 requires-python = ">= 3.13"
 description = "このプロジェクトでは、Python ではじめるオープンデータ解析の内容を学習するのに使う"
 dependencies = [
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.1",
     "pandas>=2.3.3",
 ]

@@ -1,6 +1,7 @@
 import os
 
 import pandas as pd
+import matplotlib.pyplot as plt
 
 
 def _create_data_form_from_csv_file(file_name: str) -> pd.DataFrame:
@@ -17,12 +18,24 @@ def _create_data_form_from_csv_file(file_name: str) -> pd.DataFrame:
         header=0
     )
 
+def _create_histgram(data: pd.DataFrame):
+    print("drawing a histgram using 資本金")
+    capital = data["資本金"]
+    hist1 = (capital.value_counts(bins=range(0, 501,100), sort=False).reset_index())
+    hist2 = (capital.value_counts(bins=range(0, 501,100), sort=False).reset_index().rename(
+        columns={"index": "資本金階級", "count":"階級"}
+    ))
+    print(hist1)
+    print(hist2)
+    plt.hist(capital, bins=range(0, 501, 100))
+    plt.show()
 
 
 def main():
     print("start use sect-3")
     sample_data = _create_data_form_from_csv_file("open-data/src/resources/sect-3.csv")
     print(sample_data)
+    _create_histgram(sample_data)
 
 if __name__ == "__main__":
     main()
