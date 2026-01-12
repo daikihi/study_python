@@ -38,6 +38,31 @@ source .venv/bin/activate
 uv pip install pandas
 ```
 
+or まだ使ったこと無いけど、`pyproject.toml` に書いてあると以下のコマンドでも実行できるっぽい
+
+```bash
+uv sync
+```
+
+## IDE 系で実行する場合
+
+### VSCode
+
+```bash
+mkdir .vscode
+touch settings.json
+vi settings.json
+```
+
+以下を書き足してね
+
+```toml
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python"
+}
+
+```
+
 # sect-3
 
 第三章、統計の基礎
