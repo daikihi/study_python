@@ -30,12 +30,16 @@ def _create_histgram(data: pd.DataFrame):
     plt.hist(capital, bins=range(0, 501, 100))
     plt.show()
 
+def _show_standard_statistics(data: pd.DataFrame):
+    print(data.describe())
+
 
 def main():
     print("start use sect-3")
     sample_data = _create_data_form_from_csv_file("open-data/src/resources/sect-3.csv")
     print(sample_data)
     _create_histgram(sample_data)
+    _show_standard_statistics(sample_data)
 
 if __name__ == "__main__":
     main()
