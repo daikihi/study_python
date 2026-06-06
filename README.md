@@ -1,25 +1,29 @@
-# study_python
-just for my study
+# とりあえず、自分の実験用のリポジトリ
 
+何もわかってないPython を少し触ってみる。（他にもリポジトリ作ってるけど、基本的には同じ様な立ち位置）
 
-# ERROR が出た時にどうやって解決したか
+## code の場所
 
-```
-$ python3.12 -m pip install --upgrade pip
-error: externally-managed-environment
+src/
 
-× This environment is externally managed
-╰─> To install Python packages system-wide, try brew install
-    xyz, where xyz is the package you are trying to
-    install.
-```
+### basic use
 
-今回はpython3.12 を使っていたので、下のバージョンを使った。
+一番基本的なことで遊ぶ時はここ
 
-python3.12 の部分は、もしかしたら数字が変わる可能性があるので注意
+### PyTorch
 
-```
-$ python3 -m venv ~/mypy
-$ source ~/mypy/bin/activate
-(mypy)$ python3.12 -m pip install --upgrade pip
+機械学習系のことをやってみたい時はここ
+
+## 使い方
+
+python 3 を使う前提
+
+uv で動かすつもり（自分が覚えて置けるように書く）
+
+```bash
+ uv init
+ uv add torch
+ uv run src/PyTorch/001/sample1.py
+ uv run src/PyTorch/001/sample1.py
+
 ```
