@@ -28,6 +28,5 @@ uv で動かすつもり（自分が覚えて置けるように書く）
  uv init
  uv add torch
  uv run src/PyTorch/001/sample1.py
- uv run src/PyTorch/001/sample1.py
 
 ```
